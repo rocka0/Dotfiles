@@ -389,7 +389,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *MonokaiPro
+colors: *DoomOne
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
