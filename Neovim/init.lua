@@ -87,7 +87,9 @@ require("lualine").setup {
         section_separators = ""
     }
 }
-function foo() print(1) end
+function foo()
+    print(1)
+end
 --Enable Comment.nvim
 require("Comment").setup()
 
@@ -317,8 +319,9 @@ local t = luasnip.text_node
 local i = luasnip.insert_node
 local p = require("luasnip.extras").partial
 
-luasnip.snippets = {
-    cpp = {
+luasnip.add_snippets(
+    "cpp",
+    {
         s(
             "CPP",
             {
@@ -362,7 +365,7 @@ luasnip.snippets = {
             }
         )
     }
-}
+)
 
 -- nvim-cmp setup
 local cmp = require "cmp"

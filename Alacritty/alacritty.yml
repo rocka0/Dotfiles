@@ -1,5 +1,5 @@
 window:
-  opacity: 0.85
+  opacity: 0.6
 
   dimensions:
     columns: 64
@@ -389,7 +389,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *DoomOne
+colors: *Dracula
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
