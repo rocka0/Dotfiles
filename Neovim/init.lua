@@ -19,11 +19,10 @@ require("packer").startup(
         use "tpope/vim-fugitive" -- Git commands in nvim
         use "tpope/vim-rhubarb" -- Fugitive-companion to interact with github
         use "numToStr/Comment.nvim" -- "gc" to comment visual regions/lines
-        use "ludovicchabant/vim-gutentags" -- Automatic tags management
         -- UI to select things (files, grep results, open buffers...)
         use {"nvim-telescope/telescope.nvim", requires = {"nvim-lua/plenary.nvim"}}
         use {"nvim-telescope/telescope-fzf-native.nvim", run = "make"}
-        use "navarasu/onedark.nvim"
+		use 'folke/tokyonight.nvim'
         use {"nvim-lualine/lualine.nvim", requires = {"kyazdani42/nvim-web-devicons", opt = true}}
         -- Add indentation guides even on blank lines
         use "lukas-reineke/indent-blankline.nvim"
@@ -65,31 +64,24 @@ vim.o.smartcase = true
 vim.o.updatetime = 250
 vim.wo.signcolumn = "yes"
 
---Set colorscheme
-vim.o.termguicolors = true
-require("onedark").setup {
-    style = "warmer"
-}
-require("onedark").load()
-
---Gutentags config
-vim.g.gutentags_cache_dir = "~/.cache/nvim/ctags/"
-
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
+
+--Set colorscheme
+vim.o.termguicolors = true
+vim.g.tokyonight_style = "night"
+vim.cmd[[colorscheme tokyonight]]
 
 --Set statusbar
 require("lualine").setup {
     options = {
         icons_enabled = true,
-        theme = "onedark",
+        theme = "tokyonight",
         component_separators = "|",
         section_separators = ""
     }
 }
-function foo()
-    print(1)
-end
+
 --Enable Comment.nvim
 require("Comment").setup()
 
@@ -314,7 +306,6 @@ local luasnip = require "luasnip"
 
 -- luasnip configuration
 local s = luasnip.snippet
-local sn = luasnip.snippet_node
 local t = luasnip.text_node
 local i = luasnip.insert_node
 local p = require("luasnip.extras").partial
@@ -412,15 +403,17 @@ cmp.setup {
 }
 
 -- Set Tab Options
-vim.opt.ts = 2
-vim.opt.sts = 2
-vim.opt.sw = 2
+vim.opt.ts = 4
+vim.opt.sts = 4
+vim.opt.sw = 4
 
 -- Set clipboard to unnamed plus
 vim.cmd "set clipboard+=unnamedplus"
 
 -- Set Ctrl-s as save
 vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<C-a>", ":%y+<CR>", {noremap = true, silent = true})
 
 -- Set Ctrl-b as build
 vim.cmd "autocmd filetype cpp nnoremap <C-b> :w <bar> !./compile %:r && ./%:r < in && rm ./%:r <CR>"
+

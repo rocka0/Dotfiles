@@ -1,3 +1,11 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/org/gnome/desktop/wm/keybindings/switch-to-workspace-12'
+saved-view='/org/gnome/desktop/wm/keybindings/'
+show-warning=false
+window-height=984
+window-is-maximized=false
+window-width=1904
+
 [org/gnome/GWeather]
 temperature-unit='centigrade'
 
@@ -28,7 +36,7 @@ state=43908
 
 [org/gnome/control-center]
 last-panel='display'
-window-state=(1904, 1026, false)
+window-state=(1920, 1036, false)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities', 'YaST']
@@ -175,10 +183,16 @@ move-to-monitor-down=@as []
 move-to-monitor-left=@as []
 move-to-monitor-right=@as []
 move-to-monitor-up=@as []
-move-to-workspace-1=['<Shift><Super>exclam']
-move-to-workspace-2=['<Shift><Super>at']
-move-to-workspace-3=['<Shift><Super>numbersign']
-move-to-workspace-4=['<Shift><Super>dollar']
+move-to-workspace-1=['<Super><Shift>1']
+move-to-workspace-10=['<Super><Shift>0']
+move-to-workspace-2=['<Super><Shift>2']
+move-to-workspace-3=['<Super><Shift>3']
+move-to-workspace-4=['<Super><Shift>4']
+move-to-workspace-5=['<Super><Shift>5']
+move-to-workspace-6=['<Super><Shift>6']
+move-to-workspace-7=['<Super><Shift>7']
+move-to-workspace-8=['<Super><Shift>8']
+move-to-workspace-9=['<Super><Shift>9']
 move-to-workspace-down=@as []
 move-to-workspace-left=['<Shift><Super>Left']
 move-to-workspace-right=['<Shift><Super>Right']
@@ -186,9 +200,15 @@ move-to-workspace-up=@as []
 switch-input-source=@as []
 switch-input-source-backward=@as []
 switch-to-workspace-1=['<Super>1']
+switch-to-workspace-10=['<Super>0']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
 switch-to-workspace-4=['<Super>4']
+switch-to-workspace-5=['<Super>5']
+switch-to-workspace-6=['<Super>6']
+switch-to-workspace-7=['<Super>7']
+switch-to-workspace-8=['<Super>8']
+switch-to-workspace-9=['<Super>9']
 switch-to-workspace-down=['<Primary><Super>Down', '<Primary><Super>j']
 switch-to-workspace-left=['<Control><Super>Left']
 switch-to-workspace-right=['<Control><Super>Right']
@@ -197,7 +217,9 @@ toggle-maximized=['<Super>m']
 unmaximize=['<Alt>F5']
 
 [org/gnome/desktop/wm/preferences]
+num-workspaces=6
 titlebar-font='Hack NF Bold 11'
+workspace-names=@as []
 
 [org/gnome/eog/view]
 background-color='rgb(0,0,0)'
@@ -264,6 +286,7 @@ col-6-visible=true
 col-6-width=0
 
 [org/gnome/mutter]
+dynamic-workspaces=false
 overlay-key=''
 workspaces-only-on-primary=false
 
@@ -283,7 +306,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(948, 1026)
+initial-size=(936, 1004)
 maximized=false
 sidebar-width=201
 start-with-sidebar=true
@@ -322,8 +345,8 @@ sleep-inactive-battery-type='nothing'
 [org/gnome/shell]
 app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'bvnc.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'avahi-discover.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'org.gnome.Cheese.desktop': <{'position': <5>}>, 'libreoffice-math.desktop': <{'position': <6>}>, 'simple-scan.desktop': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'qvidcap.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'noisetorch.desktop': <{'position': <13>}>, 'org.pwmt.zathura.desktop': <{'position': <14>}>, 'libreoffice-base.desktop': <{'position': <15>}>, 'libreoffice-calc.desktop': <{'position': <16>}>, 'libreoffice-draw.desktop': <{'position': <17>}>, 'libreoffice-impress.desktop': <{'position': <18>}>, 'org.gnome.Nautilus.desktop': <{'position': <19>}>, 'visual-studio-code.desktop': <{'position': <20>}>, 'mpv.desktop': <{'position': <21>}>, 'libreoffice-startcenter.desktop': <{'position': <22>}>, 'org.wireshark.Wireshark.desktop': <{'position': <23>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'jconsole-java-openjdk.desktop': <{'position': <2>}>, 'jshell-java-openjdk.desktop': <{'position': <3>}>, 'nvim.desktop': <{'position': <4>}>, 'ranger.desktop': <{'position': <5>}>, 'htop.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'transmission-gtk.desktop': <{'position': <8>}>, 'lstopo.desktop': <{'position': <9>}>}]
 command-history=['r']
-disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
+disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
 favorite-apps=@as []
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='40.4'
@@ -334,25 +357,30 @@ current-workspace-only=true
 [org/gnome/shell/extensions/pop-shell]
 activate-launcher=['<Super>space']
 active-hint=true
-gap-inner=uint32 2
-gap-outer=uint32 2
+gap-inner=uint32 4
+gap-outer=uint32 4
 hint-color-rgba='rgb(132,0,228)'
 pop-monitor-left=@as []
 pop-monitor-right=@as []
 show-skip-taskbar=false
 show-title=false
-smart-gaps=false
+smart-gaps=true
 snap-to-grid=true
 tile-by-default=true
 
 [org/gnome/shell/extensions/user-theme]
-name='Orchis-dark-compact'
+name='Orchis-dark'
 
 [org/gnome/shell/keybindings]
 switch-to-application-1=@as []
 switch-to-application-2=@as []
 switch-to-application-3=@as []
 switch-to-application-4=@as []
+switch-to-application-5=@as []
+switch-to-application-6=@as []
+switch-to-application-7=@as []
+switch-to-application-8=@as []
+switch-to-application-9=@as []
 toggle-message-tray=@as []
 toggle-overview=@as []
 
@@ -384,7 +412,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-size=(1920, 1042)
+window-size=(1920, 1036)
 
 [org/gtk/settings/color-chooser]
 custom-colors=[(0.51909909909909879, 0.0, 0.89333333333333342, 1.0), (0.88627450980392153, 0.0, 1.0, 1.0), (0.88513513513513509, 0.0, 1.0, 1.0), (0.18823529411764706, 0.61176470588235299, 1.0, 1.0), (0.18999999999999995, 0.61120000000000041, 1.0, 1.0), (0.0, 0.75686274509803919, 1.0, 1.0), (0.0, 0.75675675675675658, 1.0, 1.0), (0.0, 0.18823529411764706, 1.0, 1.0)]
@@ -401,7 +429,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(495, 68)
+window-position=(276, 91)
 window-size=(1369, 902)
 
 [system/proxy]
