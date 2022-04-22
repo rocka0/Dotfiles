@@ -83,7 +83,7 @@ monospace-font-name='Hack NF 10'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc']
+application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -128,6 +128,9 @@ application-id='org.gnome.Screenshot.desktop'
 [org/gnome/desktop/notifications/application/org-gnome-settings]
 application-id='org.gnome.Settings.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-shell-portalhelper]
+application-id='org.gnome.Shell.PortalHelper.desktop'
+
 [org/gnome/desktop/notifications/application/spotify]
 application-id='spotify.desktop'
 
@@ -142,6 +145,9 @@ application-id='visual-studio-code-insiders.desktop'
 
 [org/gnome/desktop/notifications/application/visual-studio-code]
 application-id='visual-studio-code.desktop'
+
+[org/gnome/desktop/notifications/application/vlc]
+application-id='vlc.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
 numlock-state=true
@@ -339,6 +345,7 @@ command='nautilus'
 name='Nautilus'
 
 [org/gnome/settings-daemon/plugins/power]
+power-button-action='suspend'
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 

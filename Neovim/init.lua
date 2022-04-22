@@ -412,8 +412,9 @@ vim.cmd "set clipboard+=unnamedplus"
 
 -- Set Ctrl-s as save
 vim.api.nvim_set_keymap("n", "<C-s>", ":w<CR>", {noremap = true, silent = true})
+
+-- Set Ctrl-a to copy entire file
 vim.api.nvim_set_keymap("n", "<C-a>", ":%y+<CR>", {noremap = true, silent = true})
 
--- Set Ctrl-b as build
+-- Set Ctrl-b as build for CPP Files
 vim.cmd "autocmd filetype cpp nnoremap <C-b> :w <bar> !./compile %:r && ./%:r < in && rm ./%:r <CR>"
-
