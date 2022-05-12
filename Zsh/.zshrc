@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias yt2mp3="youtube-dl -x -f bestaudio --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
 alias ls='lsd'
 alias cat='bat'
+alias mktempd='mktemp -d --tmpdir=.'
 
 # Personal Exports
 export EDITOR='nvim'
