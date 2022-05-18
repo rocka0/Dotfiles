@@ -1,10 +1,23 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/desktop/wm/keybindings/switch-to-workspace-12'
-saved-view='/org/gnome/desktop/wm/keybindings/'
+saved-pathbar-path='/org/gnome/desktop/wm/preferences/num-workspaces'
+saved-view='/org/gnome/desktop/wm/preferences/num-workspaces'
 show-warning=false
-window-height=984
-window-is-maximized=false
-window-width=1904
+window-height=452
+window-is-maximized=true
+window-width=936
+
+[com/github/johnfactotum/Foliate/library]
+height=454
+maximized=false
+page='library'
+width=936
+
+[com/github/johnfactotum/Foliate/window-state]
+fullscreen=false
+height=454
+last-file='/home/tusky/Tushar/PDF/TSAONGAF.pdf'
+maximized=false
+width=936
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
@@ -35,7 +48,7 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='power'
 window-state=(1920, 1036, false)
 
 [org/gnome/desktop/app-folders]
@@ -55,8 +68,8 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tusky/.local/share/backgrounds/2022-04-10-18-45-02-wp6596767-senjougahara-wallpapers.jpg'
-picture-uri-dark='file:///home/tusky/.local/share/backgrounds/2022-04-10-18-45-02-wp6596767-senjougahara-wallpapers.jpg'
+picture-uri='file:///home/tusky/.local/share/backgrounds/2022-05-12-11-35-10-bunny.jpg'
+picture-uri-dark='file:///home/tusky/.local/share/backgrounds/2022-05-12-11-35-10-bunny.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -166,7 +179,7 @@ remember-recent-files=false
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/tusky/.local/share/backgrounds/2022-04-10-18-45-02-wp6596767-senjougahara-wallpapers.jpg'
+picture-uri='file:///home/tusky/.local/share/backgrounds/2022-05-12-11-35-10-bunny.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -223,7 +236,7 @@ toggle-maximized=['<Super>m']
 unmaximize=['<Alt>F5']
 
 [org/gnome/desktop/wm/preferences]
-num-workspaces=6
+num-workspaces=10
 titlebar-font='Hack NF Bold 11'
 workspace-names=@as []
 
@@ -350,7 +363,7 @@ sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'bvnc.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'avahi-discover.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'org.gnome.Cheese.desktop': <{'position': <5>}>, 'libreoffice-math.desktop': <{'position': <6>}>, 'simple-scan.desktop': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'qvidcap.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'noisetorch.desktop': <{'position': <13>}>, 'org.pwmt.zathura.desktop': <{'position': <14>}>, 'libreoffice-base.desktop': <{'position': <15>}>, 'libreoffice-calc.desktop': <{'position': <16>}>, 'libreoffice-draw.desktop': <{'position': <17>}>, 'libreoffice-impress.desktop': <{'position': <18>}>, 'org.gnome.Nautilus.desktop': <{'position': <19>}>, 'visual-studio-code.desktop': <{'position': <20>}>, 'mpv.desktop': <{'position': <21>}>, 'libreoffice-startcenter.desktop': <{'position': <22>}>, 'org.wireshark.Wireshark.desktop': <{'position': <23>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'jconsole-java-openjdk.desktop': <{'position': <2>}>, 'jshell-java-openjdk.desktop': <{'position': <3>}>, 'nvim.desktop': <{'position': <4>}>, 'ranger.desktop': <{'position': <5>}>, 'htop.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'transmission-gtk.desktop': <{'position': <8>}>, 'lstopo.desktop': <{'position': <9>}>}]
+app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'bvnc.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'avahi-discover.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'org.gnome.Cheese.desktop': <{'position': <5>}>, 'libreoffice-math.desktop': <{'position': <6>}>, 'simple-scan.desktop': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'qvidcap.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'org.pwmt.zathura.desktop': <{'position': <13>}>, 'libreoffice-base.desktop': <{'position': <14>}>, 'libreoffice-calc.desktop': <{'position': <15>}>, 'libreoffice-draw.desktop': <{'position': <16>}>, 'libreoffice-impress.desktop': <{'position': <17>}>, 'org.gnome.Nautilus.desktop': <{'position': <18>}>, 'visual-studio-code.desktop': <{'position': <19>}>, 'mpv.desktop': <{'position': <20>}>, 'libreoffice-startcenter.desktop': <{'position': <21>}>, 'org.wireshark.Wireshark.desktop': <{'position': <22>}>, 'google-chrome.desktop': <{'position': <23>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'jconsole-java-openjdk.desktop': <{'position': <2>}>, 'jshell-java-openjdk.desktop': <{'position': <3>}>, 'nvim.desktop': <{'position': <4>}>, 'htop.desktop': <{'position': <5>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'discord.desktop': <{'position': <8>}>, 'lstopo.desktop': <{'position': <9>}>}]
 command-history=['r']
 disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com']
 enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
@@ -363,7 +376,7 @@ current-workspace-only=true
 
 [org/gnome/shell/extensions/pop-shell]
 activate-launcher=['<Super>space']
-active-hint=true
+active-hint=false
 gap-inner=uint32 4
 gap-outer=uint32 4
 hint-color-rgba='rgb(132,0,228)'
@@ -436,7 +449,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(276, 91)
+window-position=(551, 138)
 window-size=(1369, 902)
 
 [system/proxy]
