@@ -107,7 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='lsd'
-alias cat='bat'
+alias cat='batcat'
 alias mktempd='mktemp -d --tmpdir=.'
 alias chkwarp='curl -s "https://www.cloudflare.com/cdn-cgi/trace/" | rg "warp"'
 alias yt2mp3="youtube-dl -x -f bestaudio --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
