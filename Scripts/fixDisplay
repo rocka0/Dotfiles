@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+xrandr --newmode "SixteenByTen"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync
+
+xrandr --addmode eDP-1 "SixteenByTen"
+
+xrandr --output eDP-1 --mode "SixteenByTen"

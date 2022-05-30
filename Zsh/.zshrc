@@ -109,6 +109,7 @@ source $ZSH/oh-my-zsh.sh
 alias ls='lsd'
 alias cat='batcat'
 alias mktempd='mktemp -d --tmpdir=.'
+alias fixdisplay='~/Tushar/Dotfiles/Scripts/fixDisplay'
 alias chkwarp='curl -s "https://www.cloudflare.com/cdn-cgi/trace/" | rg "warp"'
 alias yt2mp3="youtube-dl -x -f bestaudio --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
 

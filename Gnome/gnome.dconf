@@ -24,25 +24,25 @@ enable=true
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)']
-last-refresh-time=int64 1653733953
+cached-drivers=['nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)']
+last-refresh-time=int64 1653988892
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
 
 [org/gnome/Geary]
 migrated-config=true
-window-height=1009
-window-width=834
+window-height=1136
+window-width=936
 
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Hyderabad International Airport/Rajiv Gandhi International Airport', 'VOHS', false, [(0.30089476304382234, 1.3688278031384937)], @a(dd) [])>)>]
 
 [org/gnome/calendar]
-active-view='month'
-window-maximized=true
+active-view='week'
+window-maximized=false
 window-position=(0, 32)
-window-size=(1920, 1048)
+window-size=(1920, 1168)
 
 [org/gnome/charmap/window-state]
 size=(1920, 1168)
@@ -64,7 +64,7 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='desktop-workspaces'
+last-panel='keyboard'
 window-state=(1920, 1036, false)
 
 [org/gnome/desktop/app-folders]
@@ -115,8 +115,10 @@ xkb-options=['lv3:ralt_switch']
 clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
+cursor-size=32
 cursor-theme='oreo_spark_purple_cursors'
 document-font-name='MesloLGS NF 11'
+enable-hot-corners=true
 font-antialiasing='grayscale'
 font-hinting='slight'
 font-name='MesloLGS NF 11'
@@ -127,7 +129,7 @@ monospace-font-name='MesloLGS NF 10'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller']
+application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -163,8 +165,14 @@ application-id='libreoffice-impress.desktop'
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[org/gnome/desktop/notifications/application/org-gnome-calendar]
+application-id='org.gnome.Calendar.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
+application-id='org.gnome.Evolution-alarm-notify.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-fileroller]
 application-id='org.gnome.FileRoller.desktop'
@@ -268,6 +276,7 @@ move-to-workspace-down=@as []
 move-to-workspace-left=['<Shift><Super>Left']
 move-to-workspace-right=['<Shift><Super>Right']
 move-to-workspace-up=@as []
+panel-run-dialog=@as []
 switch-input-source=@as []
 switch-input-source-backward=@as []
 switch-to-workspace-1=['<Super>1']
@@ -288,7 +297,7 @@ toggle-maximized=['<Super>m']
 unmaximize=['<Alt>F5']
 
 [org/gnome/desktop/wm/preferences]
-button-layout='appmenu:minimize,close'
+button-layout='appmenu:minimize,maximize,close'
 num-workspaces=10
 titlebar-font='MesloLGS NF Bold 11'
 workspace-names=@as []
@@ -321,6 +330,9 @@ window-ratio=(2.22325150532654, 1.6168847198222662)
 [org/gnome/evolution-data-server]
 migrated=true
 network-monitor-gio-name=''
+
+[org/gnome/evolution-data-server/calendar]
+reminders-past=['system-calendar\n4362947716f2d7a78f89b62977625fe2e149e8b0\t20220531T200500\n1654007400\n1654007700\n1654014900\nBEGIN:VEVENT\r\nUID:d3534f02bd69dc27844273d0e5f9ffcee55fcc69\r\nDTSTAMP:20220530T161159Z\r\nDTSTART;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:\r\n 20220531T200500\r\nDTEND;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:20220531T220500\r\nSUMMARY:Codeforces Round\r\nSEQUENCE:7\r\nCREATED:20220530T161159Z\r\nLAST-MODIFIED:20220530T161334Z\r\nDESCRIPTION:CF Round\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4362947716f2d7a78f89b62977625fe2e149e8b0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT5M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:0e82a29ec57190867b487d10e2b3be7d1bf908f8\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT10M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4a02d7608ba554c0c6345f2b02de8535c80092e0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'system-calendar\n0e82a29ec57190867b487d10e2b3be7d1bf908f8\t20220531T200500\n1654007100\n1654007700\n1654014900\nBEGIN:VEVENT\r\nUID:d3534f02bd69dc27844273d0e5f9ffcee55fcc69\r\nDTSTAMP:20220530T161159Z\r\nDTSTART;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:\r\n 20220531T200500\r\nDTEND;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:20220531T220500\r\nSUMMARY:Codeforces Round\r\nSEQUENCE:7\r\nCREATED:20220530T161159Z\r\nLAST-MODIFIED:20220530T161334Z\r\nDESCRIPTION:CF Round\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4362947716f2d7a78f89b62977625fe2e149e8b0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT5M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:0e82a29ec57190867b487d10e2b3be7d1bf908f8\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT10M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4a02d7608ba554c0c6345f2b02de8535c80092e0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\n', 'system-calendar\n4a02d7608ba554c0c6345f2b02de8535c80092e0\t20220531T200500\n1654006800\n1654007700\n1654014900\nBEGIN:VEVENT\r\nUID:d3534f02bd69dc27844273d0e5f9ffcee55fcc69\r\nDTSTAMP:20220530T161159Z\r\nDTSTART;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:\r\n 20220531T200500\r\nDTEND;TZID=/freeassociation.sourceforge.net/Asia/Kolkata:20220531T220500\r\nSUMMARY:Codeforces Round\r\nSEQUENCE:7\r\nCREATED:20220530T161159Z\r\nLAST-MODIFIED:20220530T161334Z\r\nDESCRIPTION:CF Round\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4362947716f2d7a78f89b62977625fe2e149e8b0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT5M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:0e82a29ec57190867b487d10e2b3be7d1bf908f8\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT10M\r\nEND:VALARM\r\nBEGIN:VALARM\r\nX-EVOLUTION-ALARM-UID:4a02d7608ba554c0c6345f2b02de8535c80092e0\r\nACTION:DISPLAY\r\nDESCRIPTION:Codeforces Round\r\nTRIGGER;RELATED=START:-PT15M\r\nEND:VALARM\r\nEND:VEVENT\r\n']
 
 [org/gnome/file-roller/dialogs/extract]
 recreate-folders=true
@@ -398,32 +410,27 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(12.972399280057596, 77.585499999999996)
+night-light-last-coordinates=(12.894091139884809, 77.664374899999999)
 night-light-schedule-automatic=false
 night-light-schedule-from=20.0
 night-light-schedule-to=20.0
 night-light-temperature=uint32 1700
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+custom-keybindings=@as []
+email=@as []
+help=@as []
+home=['<Super>e']
 rotate-video-lock-static=@as []
+screenreader=@as []
 screensaver=['<Super>Escape']
-terminal=['<Super>t']
+terminal=['<Alt>Return']
+www=@as []
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
 binding='Launch1'
 command='gnome-control-center wifi'
 name='WiFi'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
-binding='<Alt>Return'
-command='alacritty'
-name='Alacritty'
-
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
-binding='<Super>e'
-command='nautilus'
-name='Nautilus'
 
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='suspend'
@@ -435,7 +442,7 @@ app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'bvnc.desktop': <{'posi
 command-history=['r']
 disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
 enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
-favorite-apps=@as []
+favorite-apps=['pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'pop-cosmic-applications.desktop']
 had-bluetooth-devices-setup=true
 welcome-dialog-last-shown-version='40.4'
 
@@ -452,7 +459,7 @@ manualhide=true
 show-mounts=false
 
 [org/gnome/shell/extensions/pop-cosmic]
-show-applications-button=true
+show-applications-button=false
 show-workspaces-button=false
 workspace-picker-left=false
 
@@ -534,7 +541,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(525, 222)
+window-position=(276, 93)
 window-size=(1369, 902)
 
 [system/proxy]
