@@ -7,7 +7,7 @@
     },
     {
         "keys": [
-            "ctrl+up"
+            "ctrl+alt+up"
         ],
         "command": "travel_to_pane",
         "args": {
@@ -16,7 +16,7 @@
     },
     {
         "keys": [
-            "ctrl+right"
+            "ctrl+alt+right"
         ],
         "command": "travel_to_pane",
         "args": {
@@ -25,7 +25,7 @@
     },
     {
         "keys": [
-            "ctrl+down"
+            "ctrl+alt+down"
         ],
         "command": "travel_to_pane",
         "args": {
@@ -34,7 +34,7 @@
     },
     {
         "keys": [
-            "ctrl+left"
+            "ctrl+alt+left"
         ],
         "command": "travel_to_pane",
         "args": {

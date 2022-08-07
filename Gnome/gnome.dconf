@@ -20,12 +20,15 @@ maximized=false
 width=936
 
 [com/system76/hidpi]
-enable=true
+enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)']
-last-refresh-time=int64 1653988892
+cached-drivers=['nvidia-driver-515, (kernel modules provided by nvidia-dkms-515)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)']
+last-refresh-time=int64 1660292394
+window-maximized=false
+window-position=(16, 48)
+window-size=(1016, 1216)
 
 [org/gnome/GWeather]
 temperature-unit='centigrade'
@@ -35,8 +38,16 @@ migrated-config=true
 window-height=1136
 window-width=936
 
+[org/gnome/TextEditor]
+style-variant='dark'
+
 [org/gnome/Weather]
 locations=[<(uint32 2, <('Hyderabad International Airport/Rajiv Gandhi International Airport', 'VOHS', false, [(0.30089476304382234, 1.3688278031384937)], @a(dd) [])>)>]
+
+[org/gnome/boxes]
+first-run=false
+view='icon-view'
+window-maximized=true
 
 [org/gnome/calendar]
 active-view='week'
@@ -64,8 +75,8 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(1920, 1036, false)
+last-panel='display'
+window-state=(1920, 1168, false)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities']
@@ -92,13 +103,15 @@ name='X-GNOME-Utilities.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
 name='Code'
+translate=true
 
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///home/tusky/.local/share/backgrounds/2022-05-12-11-35-10-bunny.jpg'
-picture-uri-dark='file:///home/tusky/.local/share/backgrounds/2022-05-28-16-38-21-wallpaper.jpg'
+picture-uri='file:///usr/share/backgrounds/fedora-workstation/calm.jpg'
+picture-uri-dark='file:///home/tusky/.local/share/backgrounds/2022-08-09-12-16-56-269413.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -127,9 +140,15 @@ gtk-theme='Pop-dark'
 icon-theme='candy-icons'
 monospace-font-name='MesloLGS NF 10'
 show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/media-handling]
+autorun-x-content-ignore=@as []
+autorun-x-content-open-folder=@as []
+autorun-x-content-start-app=['x-content/ostree-repository']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary']
+application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary', 'org-freedesktop-problems-applet', 'io-elementary-appcenter', 'org-gnome-evince']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -156,6 +175,9 @@ application-id='gnome-power-panel.desktop'
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
 
+[org/gnome/desktop/notifications/application/io-elementary-appcenter]
+application-id='io.elementary.appcenter.desktop'
+
 [org/gnome/desktop/notifications/application/libreoffice-calc]
 application-id='libreoffice-calc.desktop'
 
@@ -165,11 +187,20 @@ application-id='libreoffice-impress.desktop'
 [org/gnome/desktop/notifications/application/libreoffice-writer]
 application-id='libreoffice-writer.desktop'
 
+[org/gnome/desktop/notifications/application/org-freedesktop-gnomeabrt]
+application-id='org.freedesktop.GnomeAbrt.desktop'
+
+[org/gnome/desktop/notifications/application/org-freedesktop-problems-applet]
+application-id='org.freedesktop.problems.applet.desktop'
+
 [org/gnome/desktop/notifications/application/org-gnome-calendar]
 application-id='org.gnome.Calendar.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-eog]
 application-id='org.gnome.eog.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-evince]
+application-id='org.gnome.Evince.desktop'
 
 [org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify]
 application-id='org.gnome.Evolution-alarm-notify.desktop'
@@ -239,7 +270,7 @@ tls-key='/home/tusky/.local/share/gnome-remote-desktop/rdp-tls.key'
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/tusky/.local/share/backgrounds/2022-05-28-16-38-21-wallpaper.jpg'
+picture-uri='file:///home/tusky/.local/share/backgrounds/2022-08-09-12-16-56-269413.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -347,11 +378,29 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=513
-window-width=936
+window-height=553
+window-width=984
+
+[org/gnome/gedit/plugins]
+active-plugins=['spell', 'sort', 'openlinks', 'modelines', 'filebrowser', 'docinfo']
+
+[org/gnome/gedit/plugins/filebrowser]
+root='file:///'
+tree-view=true
+virtual-root='file:///home/tusky/Tushar/Dotfiles/Sublime'
 
 [org/gnome/gedit/preferences/editor]
 scheme='pop-dark'
+
+[org/gnome/gedit/preferences/ui]
+show-tabs-mode='auto'
+
+[org/gnome/gedit/state/window]
+bottom-panel-size=140
+side-panel-active-page='GeditWindowDocumentsPanel'
+side-panel-size=200
+size=(984, 553)
+state=87168
 
 [org/gnome/gnome-screenshot]
 delay=0
@@ -376,6 +425,11 @@ window-state=(1920, 1048, 0, 32)
 col-6-visible=true
 col-6-width=0
 
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-password-authentication=true
+enable-smartcard-authentication=false
+
 [org/gnome/mutter]
 dynamic-workspaces=false
 edge-tiling=false
@@ -399,7 +453,7 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(936, 1136)
+initial-size=(984, 1216)
 maximized=false
 sidebar-width=201
 start-with-sidebar=true
@@ -410,14 +464,14 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(12.894091139884809, 77.664374899999999)
+night-light-last-coordinates=(12.972399280057596, 77.585499999999996)
 night-light-schedule-automatic=false
-night-light-schedule-from=20.0
-night-light-schedule-to=20.0
+night-light-schedule-from=0.0
+night-light-schedule-to=23.983333333333334
 night-light-temperature=uint32 1700
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=@as []
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']
 email=@as []
 help=@as []
 home=['<Super>e']
@@ -432,13 +486,19 @@ binding='Launch1'
 command='gnome-control-center wifi'
 name='WiFi'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
+binding='<Alt>Return'
+command='alacritty'
+name='Open Terminal'
+
 [org/gnome/settings-daemon/plugins/power]
 power-button-action='suspend'
+sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
-app-picker-layout=[{'bssh.desktop': <{'position': <0>}>, 'bvnc.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'avahi-discover.desktop': <{'position': <3>}>, 'org.gnome.Extensions.desktop': <{'position': <4>}>, 'org.gnome.Cheese.desktop': <{'position': <5>}>, 'libreoffice-math.desktop': <{'position': <6>}>, 'simple-scan.desktop': <{'position': <7>}>, 'qv4l2.desktop': <{'position': <8>}>, 'gnome-system-monitor.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'qvidcap.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'org.pwmt.zathura.desktop': <{'position': <13>}>, 'libreoffice-base.desktop': <{'position': <14>}>, 'libreoffice-calc.desktop': <{'position': <15>}>, 'libreoffice-draw.desktop': <{'position': <16>}>, 'libreoffice-impress.desktop': <{'position': <17>}>, 'org.gnome.Nautilus.desktop': <{'position': <18>}>, 'visual-studio-code.desktop': <{'position': <19>}>, 'mpv.desktop': <{'position': <20>}>, 'libreoffice-startcenter.desktop': <{'position': <21>}>, 'org.wireshark.Wireshark.desktop': <{'position': <22>}>, 'google-chrome.desktop': <{'position': <23>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'jconsole-java-openjdk.desktop': <{'position': <2>}>, 'jshell-java-openjdk.desktop': <{'position': <3>}>, 'nvim.desktop': <{'position': <4>}>, 'htop.desktop': <{'position': <5>}>, 'ca.desrt.dconf-editor.desktop': <{'position': <6>}>, 'org.gnome.Settings.desktop': <{'position': <7>}>, 'discord.desktop': <{'position': <8>}>, 'lstopo.desktop': <{'position': <9>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Maps.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Photos.desktop': <{'position': <3>}>, 'org.gnome.Totem.desktop': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Boxes.desktop': <{'position': <7>}>, 'gnome-system-monitor.desktop': <{'position': <8>}>, 'org.gnome.Terminal.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'org.gnome.TextEditor.desktop': <{'position': <13>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <14>}>, 'libreoffice-calc.desktop': <{'position': <15>}>, 'libreoffice-impress.desktop': <{'position': <16>}>, 'org.gnome.Nautilus.desktop': <{'position': <17>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Connections.desktop': <{'position': <2>}>, 'nvim.desktop': <{'position': <3>}>, 'firefox.desktop': <{'position': <4>}>, 'org.gnome.Software.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>}]
 command-history=['r']
 disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
 enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
@@ -461,14 +521,14 @@ show-mounts=false
 [org/gnome/shell/extensions/pop-cosmic]
 show-applications-button=false
 show-workspaces-button=false
-workspace-picker-left=false
+workspace-picker-left=true
 
 [org/gnome/shell/extensions/pop-shell]
 activate-launcher=['<Super>space']
 active-hint=false
 gap-inner=uint32 4
 gap-outer=uint32 4
-hint-color-rgba='rgb(132,0,228)'
+hint-color-rgba='rgb(0,102,255)'
 pop-monitor-left=@as []
 pop-monitor-right=@as []
 show-skip-taskbar=false
@@ -527,8 +587,8 @@ type-format='category'
 window-size=(1704, 1033)
 
 [org/gtk/settings/color-chooser]
-custom-colors=[(0.51909909909909879, 0.0, 0.89333333333333342, 1.0), (0.88627450980392153, 0.0, 1.0, 1.0), (0.88513513513513509, 0.0, 1.0, 1.0), (0.18823529411764706, 0.61176470588235299, 1.0, 1.0), (0.18999999999999995, 0.61120000000000041, 1.0, 1.0), (0.0, 0.75686274509803919, 1.0, 1.0), (0.0, 0.75675675675675658, 1.0, 1.0), (0.0, 0.18823529411764706, 1.0, 1.0)]
-selected-color=(true, 0.51909909909909879, 0.0, 0.89333333333333342, 1.0)
+custom-colors=[(0.0, 0.40000000000000036, 1.0, 1.0), (0.51764705882352946, 0.0, 0.89411764705882357, 1.0), (0.51909909909909879, 0.0, 0.89333333333333342, 1.0), (0.88627450980392153, 0.0, 1.0, 1.0), (0.88513513513513509, 0.0, 1.0, 1.0), (0.18823529411764706, 0.61176470588235299, 1.0, 1.0), (0.18999999999999995, 0.61120000000000041, 1.0, 1.0), (0.0, 0.75686274509803919, 1.0, 1.0)]
+selected-color=(true, 0.0, 0.40000000000000036, 1.0, 1.0)
 
 [org/gtk/settings/file-chooser]
 date-format='regular'
@@ -541,7 +601,7 @@ sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(276, 93)
+window-position=(339, 181)
 window-size=(1369, 902)
 
 [system/proxy]
