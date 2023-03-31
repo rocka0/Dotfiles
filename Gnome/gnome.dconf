@@ -24,8 +24,8 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-515, (kernel modules provided by nvidia-dkms-515)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-510-server, (kernel modules provided by nvidia-dkms-510-server)']
-last-refresh-time=int64 1660292394
+cached-drivers=['nvidia-driver-525-server, (kernel modules provided by nvidia-dkms-525-server)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-515-open, (kernel modules provided by nvidia-dkms-515-open)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-525, (kernel modules provided by nvidia-dkms-525)', 'nvidia-driver-525-open, (kernel modules provided by nvidia-dkms-525-open)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)']
+last-refresh-time=int64 1680356724
 window-maximized=false
 window-position=(16, 48)
 window-size=(1016, 1216)
@@ -75,8 +75,14 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='display'
+last-panel='keyboard'
 window-state=(1920, 1168, false)
+
+[org/gnome/desktop/a11y/interface]
+high-contrast=false
+
+[org/gnome/desktop/a11y/keyboard]
+mousekeys-enable=false
 
 [org/gnome/desktop/app-folders]
 folder-children=['Utilities']
@@ -111,7 +117,7 @@ translate=true
 color-shading-type='solid'
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/fedora-workstation/calm.jpg'
-picture-uri-dark='file:///home/tusky/.local/share/backgrounds/2022-08-09-12-16-56-269413.jpg'
+picture-uri-dark='file:///home/tushie/.local/share/backgrounds/2023-04-01-19-37-05-wallpaper.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -138,17 +144,20 @@ font-name='MesloLGS NF 11'
 gtk-enable-primary-paste=false
 gtk-theme='Pop-dark'
 icon-theme='candy-icons'
+locate-pointer=false
 monospace-font-name='MesloLGS NF 10'
 show-battery-percentage=true
+text-scaling-factor=1.25
 toolkit-accessibility=false
 
 [org/gnome/desktop/media-handling]
+autorun-never=true
 autorun-x-content-ignore=@as []
 autorun-x-content-open-folder=@as []
 autorun-x-content-start-app=['x-content/ostree-repository']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary', 'org-freedesktop-problems-applet', 'io-elementary-appcenter', 'org-gnome-evince']
+application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary', 'org-freedesktop-problems-applet', 'io-elementary-appcenter', 'org-gnome-evince', 'gnome-system-monitor']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/alacritty]
@@ -171,6 +180,9 @@ application-id='gnome-network-panel.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-system-monitor]
+application-id='gnome-system-monitor.desktop'
 
 [org/gnome/desktop/notifications/application/google-chrome]
 application-id='google-chrome.desktop'
@@ -270,7 +282,7 @@ tls-key='/home/tusky/.local/share/gnome-remote-desktop/rdp-tls.key'
 color-shading-type='solid'
 lock-delay=uint32 0
 picture-options='zoom'
-picture-uri='file:///home/tusky/.local/share/backgrounds/2022-08-09-12-16-56-269413.jpg'
+picture-uri='file:///home/tushie/.local/share/backgrounds/2023-04-01-19-37-05-wallpaper.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
 
@@ -408,20 +420,27 @@ include-pointer=false
 last-save-directory='file:///home/tusky'
 
 [org/gnome/gnome-system-monitor]
+cpu-colors=[(uint32 0, '#e6194B'), (1, '#f58231'), (2, '#ffe119'), (3, '#bfef45'), (4, '#3cb44b'), (5, '#42d4f4'), (6, '#4363d8'), (7, '#911eb4'), (8, '#f032e6'), (9, '#fabebe'), (10, '#ffd8b1'), (11, '#fffac8'), (12, '#aaffc3'), (13, '#469990'), (14, '#000075'), (15, '#e6beff'), (16, '#e3df7999f332'), (17, '#7999f332c064'), (18, '#f3329ce97999'), (19, '#799979c4f332')]
 cpu-stacked-area-chart=false
 current-tab='resources'
 disks-interval=5000
 graph-update-interval=50
-maximized=true
+maximized=false
 network-in-bits=true
 network-total-in-bits=true
 network-total-unit=false
 show-dependencies=false
 show-whose-processes='user'
 update-interval=2000
-window-state=(1920, 1048, 0, 32)
+window-state=(1268, 1544, 1284, 48)
 
 [org/gnome/gnome-system-monitor/disktreenew]
+col-0-visible=true
+col-0-width=236
+col-1-visible=true
+col-1-width=171
+col-2-visible=true
+col-2-width=134
 col-6-visible=true
 col-6-width=0
 
@@ -464,7 +483,7 @@ ignore-phase2-ca-cert=false
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(12.972399280057596, 77.585499999999996)
+night-light-last-coordinates=(17.443398560115192, 78.507499999999993)
 night-light-schedule-automatic=false
 night-light-schedule-from=0.0
 night-light-schedule-to=23.983333333333334
@@ -478,7 +497,7 @@ home=['<Super>e']
 rotate-video-lock-static=@as []
 screenreader=@as []
 screensaver=['<Super>Escape']
-terminal=['<Alt>Return']
+terminal=@as []
 www=@as []
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/PopLaunch1]
@@ -492,10 +511,12 @@ command='alacritty'
 name='Open Terminal'
 
 [org/gnome/settings-daemon/plugins/power]
+idle-dim=false
 power-button-action='suspend'
-sleep-inactive-ac-timeout=3600
-sleep-inactive-ac-type='nothing'
-sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-timeout=1800
+sleep-inactive-ac-type='suspend'
+sleep-inactive-battery-timeout=1800
+sleep-inactive-battery-type='suspend'
 
 [org/gnome/shell]
 app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'org.gnome.Maps.desktop': <{'position': <1>}>, 'org.gnome.clocks.desktop': <{'position': <2>}>, 'org.gnome.Photos.desktop': <{'position': <3>}>, 'org.gnome.Totem.desktop': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'simple-scan.desktop': <{'position': <6>}>, 'org.gnome.Boxes.desktop': <{'position': <7>}>, 'gnome-system-monitor.desktop': <{'position': <8>}>, 'org.gnome.Terminal.desktop': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, 'yelp.desktop': <{'position': <11>}>, 'Alacritty.desktop': <{'position': <12>}>, 'org.gnome.TextEditor.desktop': <{'position': <13>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <14>}>, 'libreoffice-calc.desktop': <{'position': <15>}>, 'libreoffice-impress.desktop': <{'position': <16>}>, 'org.gnome.Nautilus.desktop': <{'position': <17>}>}, {'libreoffice-writer.desktop': <{'position': <0>}>, 'org.gnome.Calendar.desktop': <{'position': <1>}>, 'org.gnome.Connections.desktop': <{'position': <2>}>, 'nvim.desktop': <{'position': <3>}>, 'firefox.desktop': <{'position': <4>}>, 'org.gnome.Software.desktop': <{'position': <5>}>, 'org.gnome.Settings.desktop': <{'position': <6>}>}]
@@ -503,7 +524,7 @@ command-history=['r']
 disabled-extensions=['window-list@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'ding@rastersoft.com']
 enabled-extensions=['native-window-placement@gnome-shell-extensions.gcampax.github.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com']
 favorite-apps=['pop-cosmic-launcher.desktop', 'pop-cosmic-workspaces.desktop', 'pop-cosmic-applications.desktop']
-had-bluetooth-devices-setup=true
+had-bluetooth-devices-setup=false
 welcome-dialog-last-shown-version='40.4'
 
 [org/gnome/shell/app-switcher]
@@ -526,8 +547,9 @@ workspace-picker-left=true
 [org/gnome/shell/extensions/pop-shell]
 activate-launcher=['<Super>space']
 active-hint=false
-gap-inner=uint32 4
-gap-outer=uint32 4
+active-hint-border-radius=uint32 0
+gap-inner=uint32 2
+gap-outer=uint32 2
 hint-color-rgba='rgb(0,102,255)'
 pop-monitor-left=@as []
 pop-monitor-right=@as []
@@ -596,12 +618,12 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=218
+sidebar-width=219
 sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(339, 181)
+window-position=(595, 344)
 window-size=(1369, 902)
 
 [system/proxy]
