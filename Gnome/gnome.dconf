@@ -24,8 +24,8 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-525-server, (kernel modules provided by nvidia-dkms-525-server)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-515-open, (kernel modules provided by nvidia-dkms-515-open)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-525, (kernel modules provided by nvidia-dkms-525)', 'nvidia-driver-525-open, (kernel modules provided by nvidia-dkms-525-open)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)']
-last-refresh-time=int64 1680356724
+cached-drivers=['nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-515-open, (kernel modules provided by nvidia-dkms-515-open)', 'nvidia-driver-525-server, (kernel modules provided by nvidia-dkms-525-server)', 'nvidia-driver-525-open, (kernel modules provided by nvidia-dkms-525-open)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-525, (kernel modules provided by nvidia-dkms-525)']
+last-refresh-time=int64 1680980588
 window-maximized=false
 window-position=(16, 48)
 window-size=(1016, 1216)
@@ -75,7 +75,7 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='keyboard'
+last-panel='desktop-dock'
 window-state=(1920, 1168, false)
 
 [org/gnome/desktop/a11y/interface]
@@ -135,17 +135,17 @@ clock-show-seconds=true
 clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=32
-cursor-theme='oreo_spark_purple_cursors'
-document-font-name='MesloLGS NF 11'
+cursor-theme='Candy-Cursors'
+document-font-name='Roboto Condensed, 14'
 enable-hot-corners=true
-font-antialiasing='grayscale'
+font-antialiasing='rgba'
 font-hinting='slight'
-font-name='MesloLGS NF 11'
+font-name='Roboto Condensed, 14'
 gtk-enable-primary-paste=false
-gtk-theme='Pop-dark'
-icon-theme='candy-icons'
+gtk-theme='Sweet'
+icon-theme='Candy'
 locate-pointer=false
-monospace-font-name='MesloLGS NF 10'
+monospace-font-name='Roboto Condensed, 14'
 show-battery-percentage=true
 text-scaling-factor=1.25
 toolkit-accessibility=false
@@ -157,11 +157,14 @@ autorun-x-content-open-folder=@as []
 autorun-x-content-start-app=['x-content/ostree-repository']
 
 [org/gnome/desktop/notifications]
-application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary', 'org-freedesktop-problems-applet', 'io-elementary-appcenter', 'org-gnome-evince', 'gnome-system-monitor']
+application-children=['gnome-power-panel', 'sublime-text', 'discord', 'libreoffice-impress', 'google-chrome', 'gnome-control-center', 'gnome-network-panel', 'alacritty', 'libreoffice-writer', 'org-gnome-nautilus', 'spotify', 'firefox-developer-edition', 'org-gnome-eog', 'org-gnome-screenshot', 'visual-studio-code-insiders', 'transmission-gtk', 'visual-studio-code', 'org-gnome-settings', 'libreoffice-calc', 'org-gnome-shell-portalhelper', 'vlc', 'org-gnome-tweaks', 'org-gnome-fileroller', 'org-gnome-calendar', 'org-gnome-evolution-alarm-notify', 'org-gnome-geary', 'org-freedesktop-problems-applet', 'io-elementary-appcenter', 'org-gnome-evince', 'gnome-system-monitor', 'com-alacritty-alacritty']
 show-in-lock-screen=false
 
 [org/gnome/desktop/notifications/application/alacritty]
 application-id='Alacritty.desktop'
+
+[org/gnome/desktop/notifications/application/com-alacritty-alacritty]
+application-id='com.alacritty.Alacritty.desktop'
 
 [org/gnome/desktop/notifications/application/discord]
 application-id='discord.desktop'
@@ -342,7 +345,8 @@ unmaximize=['<Alt>F5']
 [org/gnome/desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
 num-workspaces=10
-titlebar-font='MesloLGS NF Bold 11'
+theme='Sweet'
+titlebar-font='Roboto Condensed, Bold 14'
 workspace-names=@as []
 
 [org/gnome/eog/view]
@@ -390,8 +394,8 @@ sort-type='ascending'
 
 [org/gnome/file-roller/ui]
 sidebar-width=200
-window-height=553
-window-width=984
+window-height=720
+window-width=1268
 
 [org/gnome/gedit/plugins]
 active-plugins=['spell', 'sort', 'openlinks', 'modelines', 'filebrowser', 'docinfo']
@@ -472,21 +476,27 @@ search-filter-time-type='last_modified'
 search-view='list-view'
 
 [org/gnome/nautilus/window-state]
-initial-size=(984, 1216)
+initial-size=(1268, 1544)
 maximized=false
-sidebar-width=201
+sidebar-width=237
 start-with-sidebar=true
 
 [org/gnome/nm-applet/eap/b5eeed18-bd64-419f-9b6d-05efd6c53465]
 ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
+[org/gnome/power-manager]
+info-history-type='charge'
+info-last-device='/org/freedesktop/UPower/devices/battery_BAT0'
+info-page-number=0
+info-stats-type='discharge-accuracy'
+
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(17.443398560115192, 78.507499999999993)
+night-light-last-coordinates=(17.407401439884808, 78.507499999999993)
 night-light-schedule-automatic=false
-night-light-schedule-from=0.0
-night-light-schedule-to=23.983333333333334
+night-light-schedule-from=6.0
+night-light-schedule-to=5.9833333333333325
 night-light-temperature=uint32 1700
 
 [org/gnome/settings-daemon/plugins/media-keys]
