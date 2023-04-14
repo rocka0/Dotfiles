@@ -24,8 +24,8 @@ enable=false
 mode='hidpi'
 
 [io/elementary/appcenter/settings]
-cached-drivers=['nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-515-open, (kernel modules provided by nvidia-dkms-515-open)', 'nvidia-driver-525-server, (kernel modules provided by nvidia-dkms-525-server)', 'nvidia-driver-525-open, (kernel modules provided by nvidia-dkms-525-open)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-525, (kernel modules provided by nvidia-dkms-525)']
-last-refresh-time=int64 1680980588
+cached-drivers=['nvidia-driver-525-open, (kernel modules provided by nvidia-dkms-525-open)', 'nvidia-driver-525-server, (kernel modules provided by nvidia-dkms-525-server)', 'nvidia-driver-515-open, (kernel modules provided by nvidia-dkms-515-open)', 'nvidia-driver-510, (kernel modules provided by nvidia-dkms-510)', 'nvidia-driver-470-server, (kernel modules provided by nvidia-dkms-470-server)', 'nvidia-driver-515-server, (kernel modules provided by nvidia-dkms-515-server)', 'nvidia-driver-525, (kernel modules provided by nvidia-dkms-525)', 'nvidia-driver-470, (kernel modules provided by nvidia-dkms-470)']
+last-refresh-time=int64 1681375988
 window-maximized=false
 window-position=(16, 48)
 window-size=(1016, 1216)
@@ -75,7 +75,7 @@ size=(870, 690)
 state=43908
 
 [org/gnome/control-center]
-last-panel='desktop-dock'
+last-panel='desktop-appearance'
 window-state=(1920, 1168, false)
 
 [org/gnome/desktop/a11y/interface]
@@ -116,7 +116,7 @@ translate=true
 [org/gnome/desktop/background]
 color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/fedora-workstation/calm.jpg'
+picture-uri='file:///home/tushie/.local/share/backgrounds/2023-04-01-19-37-05-wallpaper.jpg'
 picture-uri-dark='file:///home/tushie/.local/share/backgrounds/2023-04-01-19-37-05-wallpaper.jpg'
 primary-color='#000000000000'
 secondary-color='#000000000000'
@@ -136,16 +136,16 @@ clock-show-weekday=true
 color-scheme='prefer-dark'
 cursor-size=32
 cursor-theme='Candy-Cursors'
-document-font-name='Roboto Condensed, 14'
+document-font-name='Overpass 14'
 enable-hot-corners=true
 font-antialiasing='rgba'
 font-hinting='slight'
-font-name='Roboto Condensed, 14'
+font-name='Overpass 14'
 gtk-enable-primary-paste=false
-gtk-theme='Sweet'
+gtk-theme='Pop-dark'
 icon-theme='Candy'
 locate-pointer=false
-monospace-font-name='Roboto Condensed, 14'
+monospace-font-name='Overpass 14'
 show-battery-percentage=true
 text-scaling-factor=1.25
 toolkit-accessibility=false
@@ -346,7 +346,7 @@ unmaximize=['<Alt>F5']
 button-layout='appmenu:minimize,maximize,close'
 num-workspaces=10
 theme='Sweet'
-titlebar-font='Roboto Condensed, Bold 14'
+titlebar-font='Overpass Heavy 14'
 workspace-names=@as []
 
 [org/gnome/eog/view]
@@ -470,6 +470,9 @@ restore-shortcuts=@as []
 [org/gnome/nautilus/compression]
 default-compression-format='zip'
 
+[org/gnome/nautilus/icon-view]
+default-zoom-level='large'
+
 [org/gnome/nautilus/preferences]
 default-folder-viewer='icon-view'
 search-filter-time-type='last_modified'
@@ -493,7 +496,7 @@ info-stats-type='discharge-accuracy'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
-night-light-last-coordinates=(17.407401439884808, 78.507499999999993)
+night-light-last-coordinates=(17.393001439884809, 78.448700000000002)
 night-light-schedule-automatic=false
 night-light-schedule-from=6.0
 night-light-schedule-to=5.9833333333333325
@@ -628,12 +631,12 @@ location-mode='path-bar'
 show-hidden=false
 show-size-column=true
 show-type-column=true
-sidebar-width=219
+sidebar-width=301
 sort-column='name'
 sort-directories-first=false
 sort-order='descending'
 type-format='category'
-window-position=(595, 344)
+window-position=(595, 339)
 window-size=(1369, 902)
 
 [system/proxy]
