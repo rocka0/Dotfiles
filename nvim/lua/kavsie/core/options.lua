@@ -1,7 +1,8 @@
--- Map localleader to space
+-- Map leader and localleader to space
+vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Set the clipboard to be WSL compatible
+-- Set global clipboard for WSL 2
 vim.g.clipboard = {
     name = 'wsl-clipboard',
     copy = {
@@ -14,14 +15,7 @@ vim.g.clipboard = {
     },
     cache_enabled = false,
 }
-
--- Decrease update time
-vim.opt.timeout = true
-vim.opt.timeoutlen = 250
-vim.opt.updatetime = 250
-
--- Set highlight on search off
-vim.opt.hlsearch = false
+vim.opt.clipboard:prepend({ 'unnamedplus' })
 
 -- Set line numbering on
 vim.opt.number = true
@@ -31,6 +25,9 @@ vim.opt.relativenumber = true
 
 -- Enable mouse mode
 vim.opt.mouse = 'a'
+
+-- Set highlight on search off
+vim.opt.hlsearch = false
 
 -- Case insensitive searching UNLESS /C or capital in search
 vim.opt.ignorecase = true
@@ -45,14 +42,38 @@ vim.opt.termguicolors = true
 -- Preview incremental substitute
 vim.opt.inccommand = 'nosplit'
 
--- Size of an indent
-vim.opt.shiftwidth = 4
-
--- Expand tabs to spaces
+-- Tab and indentation options
+vim.opt.autoindent = true
 vim.opt.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.smartindent = true
+vim.opt.softtabstop = 4
+vim.opt.tabstop = 4
 
 -- Command-line completion mode
 vim.opt.wildmode = 'longest:full,full'
 
--- Set the luasnips directory
-vim.g.lua_snippets_path = vim.fn.stdpath('config') .. '/lua/custom/snippets'
+-- Global statusline
+vim.opt.laststatus = 3
+vim.opt.showmode = false
+
+-- Set the cursorline
+vim.opt.cursorline = true
+
+-- Set the toggle theme icon
+vim.g.toggle_theme_icon = '   '
+
+-- Fillchars
+vim.opt.fillchars = {
+    eob = ' ',
+}
+
+-- Split options
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+
+-- Go to previous/next line with h,l,left arrow and right arrow when cursor reaches end/beginning of line
+vim.opt.whichwrap:append('<>[]hl')
+
+-- Correct backspace options
+vim.opt.backspace = 'indent,eol,start'
