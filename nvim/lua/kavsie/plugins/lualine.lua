@@ -4,7 +4,7 @@ return {
     event = 'ColorScheme',
     opts = {
         options = {
-            theme = 'rose-pine',
+            theme = 'catppuccin',
         },
     },
 }

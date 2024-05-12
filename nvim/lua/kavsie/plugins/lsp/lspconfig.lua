@@ -4,7 +4,18 @@ return {
     dependencies = {
         'hrsh7th/cmp-nvim-lsp',
         { 'folke/neodev.nvim', opts = {} },
-        { 'j-hui/fidget.nvim', opts = {} },
+        {
+            'j-hui/fidget.nvim',
+            config = function()
+                require('fidget').setup({
+                    notification = {
+                        window = {
+                            winblend = 0,
+                        },
+                    },
+                })
+            end,
+        },
     },
     config = function()
         local map = require('kavsie.core.utils').map
