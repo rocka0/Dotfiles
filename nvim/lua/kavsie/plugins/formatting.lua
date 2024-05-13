@@ -14,16 +14,5 @@ return {
                 timeout_ms = 2000,
             },
         })
-
-        local map = require('kavsie.core.utils').map
-        map('n', '<leader>F', function()
-            conform.format({
-                lsp_fallback = true,
-                async = false,
-                timeout_ms = 1000,
-            })
-        end, {
-            desc = '[F]ormat Buffer',
-        })
     end,
 }
