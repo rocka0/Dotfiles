@@ -24,4 +24,3 @@ export EDITOR='nvim'
 export LESSHISTFILE=-
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-(bat cache --build > /dev/null &)
