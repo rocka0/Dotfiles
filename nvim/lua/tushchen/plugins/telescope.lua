@@ -75,7 +75,7 @@ return {
         pcall(require('telescope').load_extension, 'fzf')
 
         local builtin = require('telescope.builtin')
-        local map = require('kavsie.core.utils').map
+        local map = require('tushchen.utils').map
 
         map('n', '<leader>fb', builtin.buffers, { desc = '[F]ind [B]uffers' })
         map('n', '<leader>fc', builtin.current_buffer_fuzzy_find, { desc = '[F]ind in [C]urrent buffer' })

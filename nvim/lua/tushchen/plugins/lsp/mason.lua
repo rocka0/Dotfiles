@@ -16,12 +16,14 @@ return {
         })
         require('mason-lspconfig').setup({
             ensure_installed = {
-                'lua_ls',
                 'clangd',
+                'gopls',
+                'lua_ls',
             },
         })
         require('mason-tool-installer').setup({
             ensure_installed = {
+                'goimports',
                 'stylua',
             },
         })

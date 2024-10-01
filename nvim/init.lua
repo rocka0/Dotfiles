@@ -1,3 +1,3 @@
-require('kavsie.core.options')
-require('kavsie.core.keymaps')
-require('kavsie.lazy')
+require('tushchen.core.options')
+require('tushchen.core.keymaps')
+require('tushchen.lazy')

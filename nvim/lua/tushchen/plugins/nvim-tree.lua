@@ -78,7 +78,7 @@ return {
             },
         })
 
-        local map = require('kavsie.core.utils').map
+        local map = require('tushchen.utils').map
         map('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', { desc = 'Toggle NvimTree panel' })
     end,
 }

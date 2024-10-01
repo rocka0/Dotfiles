@@ -18,7 +18,8 @@ return {
         },
     },
     config = function()
-        local map = require('kavsie.core.utils').map
+        local map = require('tushchen.utils').map
+        local util = require('lspconfig/util')
         vim.api.nvim_create_autocmd('LspAttach', {
             group = vim.api.nvim_create_augroup('UserLspConfig', {}),
             callback = function(ev)
@@ -107,6 +108,20 @@ return {
                             completion = {
                                 callSnippet = 'Replace',
                             },
+                        },
+                    },
+                })
+            end,
+            ['gopls'] = function()
+                lspconfig['gopls'].setup({
+                    capabilities = capabilities,
+                    cmd = { 'gopls' },
+                    filetypes = { 'go', 'gomod', 'gowork', 'gotmpl' },
+                    root_dir = util.root_pattern('go.work', 'go.mod', '.git'),
+                    settings = {
+                        gopls = {
+                            completeUnimported = true,
+                            usePlaceholders = true,
                         },
                     },
                 })

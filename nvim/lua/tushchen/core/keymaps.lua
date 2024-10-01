@@ -1,4 +1,4 @@
-local map = require('kavsie.core.utils').map
+local map = require('tushchen.utils').map
 
 map({ 'n', 'v' }, '<Space>', '<Nop>', { desc = 'Disable <leader> in normal mode.' })
 
