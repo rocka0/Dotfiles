@@ -2,20 +2,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.bin
 
-export ZSH="/home/tushie/.oh-my-zsh"
+export ZSH="/home/tushchen/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
-plugins=(git nvm fzf)
+plugins=(git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
-alias cat='bat'
+alias cat='batcat'
+alias clean='rm -rf ~/.cache ~/.local ~/.zcompdump* ~/.wget-hsts ; source ~/.zshrc ; cls'
 alias clip='clip.exe'
 alias cls='tput reset'
 alias ls='lsd'

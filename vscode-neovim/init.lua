@@ -1,5 +1,22 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.opt.hlsearch = false
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+vim.g.clipboard = {
+	name = "wsl-clipboard",
+	copy = {
+		["+"] = "clip.exe",
+		["*"] = "clip.exe",
+	},
+	paste = {
+		["+"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+		["*"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
+	},
+	cache_enabled = false,
+}
+vim.opt.clipboard:prepend({ 'unnamedplus' })
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -16,29 +33,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	"wellle/targets.vim",
-	{
-		"kylechui/nvim-surround",
-		version = "*",
-		opts = {},
-		lazy = false,
-	},
+	"kylechui/nvim-surround",
 })
 
-vim.opt.hlsearch = false
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.g.clipboard = {
-	name = "wsl-clipboard",
-	copy = {
-		["+"] = "clip.exe",
-		["*"] = "clip.exe",
-	},
-	paste = {
-		["+"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-		["*"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-	},
-	cache_enabled = false,
-}
 
 local map = function(mode, lhs, rhs, opts)
 	local options = {
