@@ -2,20 +2,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$PATH:$HOME/.bin
-
-export ZSH="/home/tushchen/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git fzf)
+plugins=(brew git fzf)
 
 source $ZSH/oh-my-zsh.sh
 
-alias cat='batcat'
-alias clean='rm -rf ~/.cache ~/.local ~/.zcompdump* ~/.wget-hsts ; source ~/.zshrc ; cls'
-alias clip='clip.exe'
+alias cat='bat'
 alias cls='tput reset'
-alias ls='lsd'
+alias ls='eza'
 
 export EDITOR='nvim'
 export LESSHISTFILE=-
