@@ -1,5 +1,8 @@
 start-at-login = true
 automatically-unhide-macos-hidden-apps = true
+after-startup-command = [
+  'exec-and-forget borders active_color=0xffe6c28b inactive_color=0xff2e2e2e width=5 hidpi=on style=round'
+]
 on-focus-changed = 'move-mouse window-lazy-center'
 
 [gaps]
