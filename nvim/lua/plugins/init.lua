@@ -1,14 +1,7 @@
 return {
   {
-    "stevearc/conform.nvim",
-    event = "BufWritePre",
-    opts = require("configs.conform"),
-  },
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("configs.lspconfig")
-    end,
+    "folke/which-key.nvim",
+    lazy = false,
   },
   {
     "kylechui/nvim-surround",
@@ -18,11 +11,29 @@ return {
     end,
   },
   {
-    "wellle/targets.vim",
-    event = "BufWritePre",
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("configs.lspconfig")
+    end,
   },
   {
-    "folke/which-key.nvim",
-    lazy = false,
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "c",
+        "cpp",
+        "python",
+        "go",
+      },
+    },
+  },
+  {
+    "stevearc/conform.nvim",
+    event = "BufWritePre",
+    opts = require("configs.conform"),
+  },
+  {
+    "wellle/targets.vim",
+    event = "BufWritePre",
   },
 }
