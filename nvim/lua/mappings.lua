@@ -69,6 +69,6 @@ map("n", "<leader>fm", "<cmd>Telescope marks<CR>", {
   desc = "Telescope [F]ind [M]arks",
 })
 
-map("n", "<leader>ft", "<cmd>Telescope marks<CR>", {
+map("n", "<leader>ft", "<cmd>Telescope terms<CR>", {
   desc = "Telescope [F]ind [T]erminals",
 })

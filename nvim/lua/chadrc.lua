@@ -2,7 +2,7 @@
 local M = {}
 
 M.base46 = {
-  theme = "seoul256_dark",
+  theme = "onenord",
   transparency = true,
 }
 
