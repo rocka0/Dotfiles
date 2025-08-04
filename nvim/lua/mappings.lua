@@ -12,10 +12,6 @@ local map = function(mode, lhs, rhs, opts)
   vim.keymap.set(mode, lhs, rhs, options)
 end
 
-map({ "n", "v" }, "<Space>", "<Nop>", {
-  desc = "Disable <leader> in normal mode.",
-})
-
 map("n", "<C-s>", "<cmd>w<CR><ESC>", {
   desc = "Save file",
 })

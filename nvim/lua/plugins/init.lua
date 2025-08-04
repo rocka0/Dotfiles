@@ -21,4 +21,8 @@ return {
     "wellle/targets.vim",
     event = "BufWritePre",
   },
+  {
+    "folke/which-key.nvim",
+    lazy = false,
+  },
 }
