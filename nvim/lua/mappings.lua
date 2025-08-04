@@ -1,5 +1,18 @@
 require("nvchad.mappings")
 
+-- Unmap some NvChad defaults
+vim.keymap.del("n", "<leader>cm")
+vim.keymap.del("n", "<leader>ds")
+vim.keymap.del("n", "<leader>e")
+vim.keymap.del("n", "<leader>gt")
+vim.keymap.del("n", "<leader>ma")
+vim.keymap.del("n", "<leader>n")
+vim.keymap.del("n", "<leader>pt")
+vim.keymap.del("n", "<leader>rn")
+vim.keymap.del("n", "<leader>wK")
+vim.keymap.del("n", "<leader>wk")
+vim.keymap.del({ "n", "x" }, "<leader>fm")
+
 -- A helper function to easily declare keymappings.
 local map = function(mode, lhs, rhs, opts)
   local options = {
@@ -50,4 +63,12 @@ map({ "n", "x" }, "j", "v:count == 0 ? 'gj' : 'j'", {
 map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", {
   expr = true,
   desc = "Move up handling word wrap",
+})
+
+map("n", "<leader>fm", "<cmd>Telescope marks<CR>", {
+  desc = "Telescope [F]ind [M]arks",
+})
+
+map("n", "<leader>ft", "<cmd>Telescope marks<CR>", {
+  desc = "Telescope [F]ind [T]erminals",
 })
