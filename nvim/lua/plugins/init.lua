@@ -5,7 +5,7 @@ return {
   },
   {
     "kylechui/nvim-surround",
-    event = "BufWritePre",
+    event = "InsertEnter",
     config = function()
       require("nvim-surround").setup({})
     end,
@@ -34,6 +34,6 @@ return {
   },
   {
     "wellle/targets.vim",
-    event = "BufWritePre",
+    event = "InsertEnter",
   },
 }
