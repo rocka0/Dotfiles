@@ -72,3 +72,7 @@ map("n", "<leader>fm", "<cmd>Telescope marks<CR>", {
 map("n", "<leader>ft", "<cmd>Telescope terms<CR>", {
   desc = "Telescope [F]ind [T]erminals",
 })
+
+map("t", "<Esc><Esc>", "<C-\\><C-n>", {
+  desc = "[E]xit Terminal Mode",
+})
