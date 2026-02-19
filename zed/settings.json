@@ -1,0 +1,69 @@
+{
+  "ui_font_family": "Iosevka Fixed",
+  "autosave": "on_focus_change",
+  "buffer_font_family": "Iosevka Fixed",
+  "buffer_font_size": 18,
+  "collaboration_panel": {
+    "button": false,
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true,
+    },
+  },
+  "disable_ai": true,
+  "icon_theme": {
+    "dark": "Catppuccin Frappé",
+    "light": "Zed (Default)",
+    "mode": "system",
+  },
+  "indent_guides": {
+    "active_line_width": 2,
+    "coloring": "fixed",
+  },
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+    },
+  },
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "arguments": [
+          "--background-index",
+          "--header-insertion=never",
+          //
+        ],
+        "path": "/opt/homebrew/opt/llvm/bin/clangd",
+      },
+    },
+  },
+  "relative_line_numbers": "enabled",
+  "restore_on_startup": "launchpad",
+  "scrollbar": {
+    "show": "never",
+  },
+  "tab_bar": {
+    "show": false,
+  },
+  "terminal": {
+    "font_family": "IosevkaTerm Nerd Font Mono",
+    "font_size": 16.0,
+  },
+  "theme": {
+    "dark": "Catppuccin Frappé",
+    "light": "One Light",
+    "mode": "system",
+  },
+  "ui_font_size": 16.0,
+  "vertical_scroll_margin": 257,
+  "vim": {
+    "gdefault": true,
+    "toggle_relative_line_numbers": true,
+    "use_smartcase_find": true,
+  },
+  "vim_mode": true,
+  "which_key": {
+    "enabled": false,
+  },
+}
