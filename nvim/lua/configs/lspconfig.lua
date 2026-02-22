@@ -46,10 +46,3 @@ for type, icon in pairs({
 end
 
 vim.lsp.enable("clangd")
-vim.lsp.config("clangd", {
-  cmd = {
-    "clangd",
-    "--background-index",
-    "--header-insertion=never",
-  },
-})

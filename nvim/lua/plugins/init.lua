@@ -1,11 +1,11 @@
 return {
   {
     "folke/which-key.nvim",
-    lazy = false,
+    event = "VeryLazy",
   },
   {
     "kylechui/nvim-surround",
-    event = "InsertEnter",
+    event = "VeryLazy",
     config = function()
       require("nvim-surround").setup({})
     end,
@@ -34,6 +34,13 @@ return {
   },
   {
     "wellle/targets.vim",
-    event = "InsertEnter",
+    event = "VeryLazy",
+  },
+  {
+    "arnamak/stay-centered.nvim",
+    event = "VeryLazy",
+    opts = {
+      enabled = true,
+    },
   },
 }
