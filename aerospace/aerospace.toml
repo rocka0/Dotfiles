@@ -1,7 +1,7 @@
 start-at-login = true
 automatically-unhide-macos-hidden-apps = true
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffefe3b5 inactive_color=0xff2e2e2e width=5 hidpi=on style=round'
+  'exec-and-forget borders active_color=0xff94e2d5 width=5 hidpi=on style=round'
 ]
 on-focus-changed = 'move-mouse window-lazy-center'
 
@@ -33,8 +33,8 @@ on-focus-changed = 'move-mouse window-lazy-center'
     alt-q = 'close --quit-if-last-window'
 
     alt-b = 'exec-and-forget MOZ_DISABLE_SAFE_MODE_KEY=1 open -n -a "Zen"'
-    alt-e = 'exec-and-forget kitty yazi ~'
-    alt-t = 'exec-and-forget kitty ~'
+    alt-e = "exec-and-forget open -n -a Ghostty --args -e yazi"
+    alt-t = 'exec-and-forget open -n -a /Applications/Ghostty.app'
 
     alt-1 = 'workspace 1'
     alt-2 = 'workspace 2'
