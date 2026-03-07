@@ -33,8 +33,8 @@ on-focus-changed = 'move-mouse window-lazy-center'
     alt-q = 'close --quit-if-last-window'
 
     alt-b = 'exec-and-forget MOZ_DISABLE_SAFE_MODE_KEY=1 open -n -a "Zen"'
-    alt-e = "exec-and-forget open -n -a Ghostty --args -e yazi"
-    alt-t = 'exec-and-forget open -n -a /Applications/Ghostty.app'
+    alt-e = "exec-and-forget open -n -a Ghostty --args -e /bin/zsh -c 'source ~/.zshrc; yazi'"
+    alt-t = "exec-and-forget open -n -a Ghostty --args -e /bin/zsh -c 'source ~/.zshrc; exec zsh'"
 
     alt-1 = 'workspace 1'
     alt-2 = 'workspace 2'
