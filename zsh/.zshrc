@@ -3,7 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_COMPDUMP="$HOME/.cache/zcompdump-${HOST}-${ZSH_VERSION}"
 export EDITOR='vim'
-export VIMINFO="NONE"
+export VIMINIT='set viminfo='
 export LESSHISTFILE=-
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
