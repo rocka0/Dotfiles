@@ -1,19 +1,19 @@
-background-opacity = 0.9257
+theme = Nord
+window-colorspace = display-p3
 
-font-family = IosevkaTerm Nerd Font Mono
-font-size = 18
+background-opacity = 0.9257
+background-blur = 8
+background-opacity-cells = true
 
 macos-titlebar-style = hidden
 window-padding-x = 8
 window-padding-y = 8
 
-shell-integration-features = no-cursor
+font-size = 20
 
 mouse-hide-while-typing = true
-scrollback-limit = 4294967295
-
 macos-option-as-alt = left
+
+scrollback-limit = 100000
+shell-integration-features = no-cursor
 quit-after-last-window-closed = true
-
-theme = Catppuccin Mocha
-
