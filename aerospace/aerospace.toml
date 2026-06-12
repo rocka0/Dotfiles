@@ -1,7 +1,7 @@
 start-at-login = true
 automatically-unhide-macos-hidden-apps = true
 after-startup-command = [
-  'exec-and-forget borders active_color=0xff94e2d5 width=5 hidpi=on style=round'
+  'exec-and-forget borders active_color=0xff8fbcbb width=5 hidpi=on style=round'
 ]
 on-focus-changed = 'move-mouse window-lazy-center'
 
@@ -32,7 +32,7 @@ on-focus-changed = 'move-mouse window-lazy-center'
     alt-f = 'macos-native-fullscreen'
     alt-q = 'close --quit-if-last-window'
 
-    alt-b = 'exec-and-forget open -n -a "Safari"'
+    alt-b = 'exec-and-forget MOZ_DISABLE_SAFE_MODE_KEY=1 open -n -a "Zen"'
     alt-e = "exec-and-forget open -n -a Ghostty --args -e /bin/zsh -c 'source ~/.zshrc; yazi'"
     alt-t = "exec-and-forget open -n -a Ghostty --args -e /bin/zsh -c 'source ~/.zshrc; exec zsh'"
 
